@@ -6,7 +6,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { config } from "@/data/config";
 
-const phrases = ["sí suman.", "te impulsan.", "abren posibilidades."];
+const phrases = [
+  <span key="1">sí<br/>suman.</span>,
+  <span key="2">te<br/>impulsan.</span>,
+  <span key="3">abren<br/>posibilidades.</span>
+];
 
 export function Hero() {
   const shouldReduceMotion = useReducedMotion();
@@ -23,7 +27,7 @@ export function Hero() {
   return (
     <section className="relative min-h-[90svh] flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden">
       {/* Background graphic placeholder (Comunidad en movimiento) */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30 md:opacity-50 md:translate-x-1/4">
+      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30 md:opacity-50 translate-x-1/4 md:translate-x-1/2 lg:translate-x-[40%]">
         <div className="flex flex-col gap-4 w-full max-w-4xl">
           {[...Array(8)].map((_, i) => (
             <motion.div
@@ -80,7 +84,7 @@ export function Hero() {
             <span className="relative block overflow-hidden text-brand-yellow" aria-hidden="true">
               {/* Invisible longest phrase to reserve space and prevent layout shifts on any screen size */}
               <span className="invisible block pointer-events-none">
-                abren posibilidades.
+                abren<br/>posibilidades.
               </span>
               
               {shouldReduceMotion ? (
