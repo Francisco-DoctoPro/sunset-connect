@@ -71,7 +71,7 @@ export function CommunityStrip() {
             </p>
           </div>
           <Link href="/directorio" className="shrink-0 group/btn bg-brand-white text-brand-cobalt px-8 py-4 rounded-full font-sans font-bold hover:bg-brand-white/90 transition-all flex items-center gap-3">
-            Ver todos los socios
+            Conoce a la comunidad
             <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
