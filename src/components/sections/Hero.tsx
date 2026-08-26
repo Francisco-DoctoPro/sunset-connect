@@ -13,14 +13,17 @@ const phrases = [
 ];
 
 const graphicLines = [
-  { color: "var(--color-brand-coral)", width: "85%", delay: 0 },
-  { color: "var(--color-brand-yellow)", width: "100%", delay: 0.1 },
-  { color: "var(--color-brand-green)", width: "75%", delay: 0.2 },
-  { color: "var(--color-brand-pink)", width: "95%", delay: 0.3 },
-  { color: "var(--color-brand-cyan)", width: "80%", delay: 0.4 },
-  { color: "var(--color-brand-white)", width: "90%", delay: 0.5 },
-  { color: "var(--color-brand-coral)", width: "70%", delay: 0.6 },
-  { color: "var(--color-brand-yellow)", width: "88%", delay: 0.7 },
+  { color: "var(--color-brand-green)", width: "80%", delay: 0 },
+  { color: "var(--color-brand-cyan)", width: "65%", delay: 0.1 },
+  { color: "var(--color-brand-coral)", width: "85%", delay: 0.2 },
+  { color: "var(--color-brand-yellow)", width: "100%", delay: 0.3 },
+  { color: "var(--color-brand-green)", width: "75%", delay: 0.4 },
+  { color: "var(--color-brand-pink)", width: "95%", delay: 0.5 },
+  { color: "var(--color-brand-cyan)", width: "80%", delay: 0.6 },
+  { color: "var(--color-brand-white)", width: "90%", delay: 0.7 },
+  { color: "var(--color-brand-coral)", width: "70%", delay: 0.8 },
+  { color: "var(--color-brand-yellow)", width: "88%", delay: 0.9 },
+  { color: "var(--color-brand-pink)", width: "60%", delay: 1.0 },
 ];
 
 export function Hero() {
@@ -38,29 +41,29 @@ export function Hero() {
   return (
     <section className="relative min-h-[90svh] flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden">
       {/* Background graphic (Dynamic and aligned to right to avoid text overlap) */}
-      <div className="absolute inset-y-0 right-0 w-full md:w-[55%] flex items-center justify-end opacity-20 md:opacity-30 pointer-events-none z-0">
-        <div className="flex flex-col gap-4 md:gap-6 w-full items-end">
+      <div className="absolute inset-y-0 right-0 w-full md:w-[55%] flex items-center justify-end opacity-40 md:opacity-60 pointer-events-none z-0">
+        <div className="flex flex-col gap-4 md:gap-5 w-full items-end">
           {graphicLines.map((line, i) => (
             <motion.div
               key={i}
               initial={{ x: "100%", opacity: 0 }}
               animate={{ 
-                x: shouldReduceMotion ? 0 : [0, -15, 0],
+                x: shouldReduceMotion ? 0 : [0, -30, 0],
                 opacity: shouldReduceMotion ? 1 : [0.7, 1, 0.7] 
               }}
               transition={{
                 x: {
-                  duration: 6 + (i % 4),
+                  duration: 3 + (i % 3),
                   repeat: Infinity,
                   ease: "easeInOut"
                 },
                 opacity: {
-                  duration: 4 + (i % 3),
+                  duration: 2 + (i % 2),
                   repeat: Infinity,
                   ease: "easeInOut"
                 },
                 // Initial entrance animation mixed in
-                default: { duration: 1, delay: line.delay, ease: "easeOut" }
+                default: { duration: 0.8, delay: line.delay, ease: "easeOut" }
               }}
               className="h-[3px] md:h-[5px] rounded-l-full"
               style={{
