@@ -73,12 +73,18 @@ export function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-sans font-bold text-5xl md:text-7xl lg:text-[8vw] leading-[1.05] tracking-tight flex flex-col"
+            className="font-sans font-bold text-5xl md:text-7xl lg:text-[7vw] leading-[1.05] tracking-tight"
           >
-            <span className="block">Conexiones que</span>
-            <span className="block h-[1.1em] relative overflow-hidden text-brand-yellow">
+            <span className="sr-only">Conexiones que sí suman, te impulsan y abren posibilidades.</span>
+            <span className="block mb-1 md:mb-2" aria-hidden="true">Conexiones que</span>
+            <span className="relative block overflow-hidden text-brand-yellow" aria-hidden="true">
+              {/* Invisible longest phrase to reserve space and prevent layout shifts on any screen size */}
+              <span className="invisible block pointer-events-none">
+                abren posibilidades.
+              </span>
+              
               {shouldReduceMotion ? (
-                <span className="block absolute inset-0">{phrases[0]}</span>
+                <span className="absolute inset-0">{phrases[0]}</span>
               ) : (
                 <AnimatePresence mode="popLayout">
                   <motion.span
@@ -87,7 +93,7 @@ export function Hero() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: "-100%", opacity: 0 }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}
-                    className="block absolute inset-0"
+                    className="absolute inset-0"
                   >
                     {phrases[index]}
                   </motion.span>
