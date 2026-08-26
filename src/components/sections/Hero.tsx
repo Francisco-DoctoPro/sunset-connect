@@ -1,11 +1,25 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { config } from "@/data/config";
 
+const phrases = ["sí suman.", "te impulsan.", "abren posibilidades."];
+
 export function Hero() {
+  const shouldReduceMotion = useReducedMotion();
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (shouldReduceMotion) return;
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % phrases.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [shouldReduceMotion]);
+
   return (
     <section className="relative min-h-[90svh] flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden">
       {/* Background graphic placeholder (Comunidad en movimiento) */}
@@ -59,9 +73,27 @@ export function Hero() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-sans font-bold text-5xl md:text-7xl lg:text-[8vw] leading-[0.95] tracking-tight text-balance"
+            className="font-sans font-bold text-5xl md:text-7xl lg:text-[8vw] leading-[1.05] tracking-tight flex flex-col"
           >
-            Donde se encuentran quienes hacen que las cosas sucedan.
+            <span className="block">Conexiones que</span>
+            <span className="block h-[1.1em] relative overflow-hidden text-brand-yellow">
+              {shouldReduceMotion ? (
+                <span className="block absolute inset-0">{phrases[0]}</span>
+              ) : (
+                <AnimatePresence mode="popLayout">
+                  <motion.span
+                    key={index}
+                    initial={{ y: "100%", opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: "-100%", opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="block absolute inset-0"
+                  >
+                    {phrases[index]}
+                  </motion.span>
+                </AnimatePresence>
+              )}
+            </span>
           </motion.h1>
 
           <motion.p
