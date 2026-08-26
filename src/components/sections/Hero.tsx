@@ -12,6 +12,17 @@ const phrases = [
   <span key="3">abren<br/>posibilidades.</span>
 ];
 
+const graphicLines = [
+  { color: "var(--color-brand-coral)", width: "85%", delay: 0 },
+  { color: "var(--color-brand-yellow)", width: "100%", delay: 0.1 },
+  { color: "var(--color-brand-green)", width: "75%", delay: 0.2 },
+  { color: "var(--color-brand-pink)", width: "95%", delay: 0.3 },
+  { color: "var(--color-brand-cyan)", width: "80%", delay: 0.4 },
+  { color: "var(--color-brand-white)", width: "90%", delay: 0.5 },
+  { color: "var(--color-brand-coral)", width: "70%", delay: 0.6 },
+  { color: "var(--color-brand-yellow)", width: "88%", delay: 0.7 },
+];
+
 export function Hero() {
   const shouldReduceMotion = useReducedMotion();
   const [index, setIndex] = useState(0);
@@ -26,33 +37,35 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[90svh] flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden">
-      {/* Background graphic placeholder (Comunidad en movimiento) */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center opacity-30 md:opacity-50 translate-x-1/4 md:translate-x-1/2 lg:translate-x-[40%]">
-        <div className="flex flex-col gap-4 w-full max-w-4xl">
-          {[...Array(8)].map((_, i) => (
+      {/* Background graphic (Dynamic and aligned to right to avoid text overlap) */}
+      <div className="absolute inset-y-0 right-0 w-full md:w-[55%] flex items-center justify-end opacity-20 md:opacity-30 pointer-events-none z-0">
+        <div className="flex flex-col gap-4 md:gap-6 w-full items-end">
+          {graphicLines.map((line, i) => (
             <motion.div
               key={i}
               initial={{ x: "100%", opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: i * 0.1,
-                duration: 1,
-                ease: [0.16, 1, 0.3, 1],
+              animate={{ 
+                x: shouldReduceMotion ? 0 : [0, -15, 0],
+                opacity: shouldReduceMotion ? 1 : [0.7, 1, 0.7] 
               }}
-              className="h-[4px] md:h-[6px] w-full rounded-full"
+              transition={{
+                x: {
+                  duration: 6 + (i % 4),
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                },
+                opacity: {
+                  duration: 4 + (i % 3),
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                },
+                // Initial entrance animation mixed in
+                default: { duration: 1, delay: line.delay, ease: "easeOut" }
+              }}
+              className="h-[3px] md:h-[5px] rounded-l-full"
               style={{
-                backgroundColor: [
-                  "var(--color-brand-coral)",
-                  "var(--color-brand-yellow)",
-                  "var(--color-brand-green)",
-                  "var(--color-brand-pink)",
-                  "var(--color-brand-cyan)",
-                  "var(--color-brand-white)",
-                  "var(--color-brand-coral)",
-                  "var(--color-brand-yellow)",
-                ][i],
-                transform: `translateX(${Math.random() * 40}px)`,
-                width: `${70 + Math.random() * 30}%`,
+                backgroundColor: line.color,
+                width: line.width,
               }}
             />
           ))}
