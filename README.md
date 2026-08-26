@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sunset Connect
 
-## Getting Started
+Primera versión de la web de Sunset Connect, una comunidad curada de creadores y emprendedores en Cuenca.
 
-First, run the development server:
+## Tecnologías
+- [Next.js](https://nextjs.org/) (App Router)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- TypeScript
 
+## Desarrollo Local
+
+Instala las dependencias y corre el servidor de desarrollo:
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La web estará disponible en [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuración y Contenido
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Todo el contenido "duro" de la página está centralizado en un único archivo de datos para que sea fácil de actualizar sin modificar componentes de UI.
 
-## Learn More
+Edita el archivo `src/data/config.ts` para modificar:
+- **URL de Luma**: Configura el enlace al evento en `config.lumaUrl`.
+- **Redes Sociales y Email**: Configura los enlaces en `config.social`.
+- **Miembros (`config.members`)**: Agrega o edita los miembros de la comunidad destacada (incluyendo fotos alojadas o locales en `/public/images`).
+- **Historias (`config.stories`)**: Modifica las noticias. La primera que tenga `isFeatured: true` aparecerá destacada.
+- **Partners (`config.partners`)**: Agrega los logos de las instituciones auspiciantes.
 
-To learn more about Next.js, take a look at the following resources:
+### Imágenes Locales
+Si deseas reemplazar los placeholders de imágenes externas de Unsplash o Wikipedia por archivos locales:
+1. Guarda las imágenes optimizadas en `public/images/`.
+2. En `src/data/config.ts`, actualiza la ruta, por ejemplo: `image: "/images/miembro-1.jpg"`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Logos y Assets Faltantes
+El diseño utiliza elementos CSS como placeholders temporales para el logotipo de "Perfiles esenciales" y la animación de "Comunidad en movimiento" en el hero. Cuando tengas los SVGs definitivos:
+- Reemplaza las barras animadas en `src/components/sections/Hero.tsx`.
+- Reemplaza el logo en el `Header.tsx` y `Footer.tsx`.
