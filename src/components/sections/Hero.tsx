@@ -61,7 +61,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-sans font-bold text-5xl md:text-7xl lg:text-[8vw] leading-[0.95] tracking-tight text-balance"
           >
-            Conoce a quienes están moviendo la ciudad.
+            Donde se encuentran quienes hacen que las cosas sucedan.
           </motion.h1>
 
           <motion.p
