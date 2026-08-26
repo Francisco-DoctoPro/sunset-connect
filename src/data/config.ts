@@ -3,7 +3,7 @@ export const config = {
   social: {
     instagram: "https://instagram.com/sunsetconnect",
     linkedin: "https://linkedin.com/company/sunsetconnect",
-    email: "hola@sunsetconnect.ec",
+    email: "hola@sunset-connect.com",
   },
   manifesto: {
     title: "No es networking. Es curiosidad compartida.",
