@@ -1,5 +1,5 @@
 export const config = {
-  lumaUrl: "https://lu.ma/sunset-connect", // Placeholder
+  lumaUrl: "https://luma.com/84v80n3r",
   social: {
     instagram: "https://instagram.com/sunsetconnect",
     linkedin: "https://linkedin.com/company/sunsetconnect",
