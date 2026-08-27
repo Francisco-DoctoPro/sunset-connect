@@ -19,12 +19,12 @@ export function PartnersRow() {
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-80 hover:opacity-100 transition-opacity duration-500">
           {config.partners.map((partner, idx) => {
             const content = (
-              <div className="relative h-12 md:h-20 w-40 md:w-56 grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-105 mix-blend-multiply">
+              <div className="relative h-12 md:h-20 w-40 md:w-56 grayscale hover:grayscale-0 transition-all duration-300 transform hover:scale-105">
                 <Image
                   src={partner.logo}
                   alt={partner.name}
                   fill
-                  className="object-contain"
+                  className="object-contain mix-blend-multiply"
                 />
               </div>
             );
