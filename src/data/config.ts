@@ -32,7 +32,7 @@ export const config = {
       project: "Apuk Eco Apparel",
       building: "Está construyendo una marca de moda sostenible que entrelaza textiles andinos reciclados.",
       bio: "Fundador de Apuk Eco Apparel, una marca que eleva la moda sostenible llevando el diseño y la manufactura ecuatoriana a Europa y EE.UU. Su amplia experiencia en la industria de hospitalidad moldea su enfoque centrado en el cliente. Cuando no está revolucionando la industria textil o buscando sinergias ecológicas, lo encontrarás disfrutando de su otra gran pasión: las montañas, el trekking y la naturaleza.",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600&h=800",
+      image: "/images/diego-pinto.png",
       link: "https://apukecoapparel.com"
     },
     {
@@ -52,7 +52,7 @@ export const config = {
       project: "Zafru",
       building: "Está construyendo una marca que transforma los sabores a través de la fruta milagrosa.",
       bio: "Fundadora de Zafru, una marca innovadora que cultiva y procesa la baya africana 'fruta milagrosa' (Synsepalum dulcificum) en Ecuador mediante agricultura regenerativa. Su magia radica en la miraculina, una proteína que se adhiere a las papilas gustativas y vuelve dulces los sabores ácidos o amargos. Su visión la llevó a participar en Misión 593 (powered by Shark Tank), donde brilló llegando hasta la gran final.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=800",
+      image: "/images/raquel-salazar.png",
       link: "https://zafru.com"
     },
     {
