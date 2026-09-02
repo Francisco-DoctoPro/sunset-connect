@@ -25,7 +25,7 @@ export default function DirectoryPage() {
             transition={{ duration: 0.5 }}
             className="font-sans font-bold text-5xl md:text-7xl tracking-tight"
           >
-            Directorio de Socios
+            Directorio de Miembros
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

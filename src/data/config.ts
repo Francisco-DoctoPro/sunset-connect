@@ -27,13 +27,13 @@ export const config = {
     },
     {
       id: "1",
-      name: "Valeria Mendoza",
-      role: "Fundadora",
-      project: "Estudio Néctar",
-      building: "Está construyendo una agencia de diseño enfocada en marcas culturales.",
-      bio: "Directora creativa con más de 10 años de experiencia trabajando con marcas de diseño y cultura. Su enfoque siempre ha estado en la narrativa visual, creando identidades memorables que conectan profundamente con las comunidades a las que sirven.",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600&h=800",
-      link: "https://example.com"
+      name: "Diego Pinto",
+      role: "Fundador & CEO",
+      project: "Apuk Eco Apparel",
+      building: "Está construyendo una marca de moda sostenible que entrelaza textiles andinos reciclados.",
+      bio: "Fundador de Apuk Eco Apparel, una marca que eleva la moda sostenible llevando el diseño y la manufactura ecuatoriana a Europa y EE.UU. Su amplia experiencia en la industria de hospitalidad moldea su enfoque centrado en el cliente. Cuando no está revolucionando la industria textil o buscando sinergias ecológicas, lo encontrarás disfrutando de su otra gran pasión: las montañas, el trekking y la naturaleza.",
+      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600&h=800",
+      link: "https://apukecoapparel.com"
     },
     {
       id: "2",
@@ -47,13 +47,13 @@ export const config = {
     },
     {
       id: "3",
-      name: "Sofía Torres",
-      role: "CEO",
-      project: "Loop Tech",
-      building: "Está construyendo soluciones de inteligencia artificial para el agro ecuatoriano.",
-      bio: "Ingeniera de software apasionada por la sostenibilidad. Tras estudiar en el extranjero, regresó para fundar Loop Tech, utilizando machine learning para optimizar los recursos hídricos en plantaciones de exportación.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600&h=800",
-      link: "https://example.com"
+      name: "Raquel Salazar",
+      role: "Fundadora",
+      project: "Zafru",
+      building: "Está construyendo una marca que transforma los sabores a través de la fruta milagrosa.",
+      bio: "Fundadora de Zafru, una marca innovadora que cultiva y procesa la baya africana 'fruta milagrosa' (Synsepalum dulcificum) en Ecuador mediante agricultura regenerativa. Su magia radica en la miraculina, una proteína que se adhiere a las papilas gustativas y vuelve dulces los sabores ácidos o amargos. Su visión la llevó a participar en Misión 593 (powered by Shark Tank), donde brilló llegando hasta la gran final.",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=800",
+      link: "https://zafru.com"
     },
     {
       id: "4",
