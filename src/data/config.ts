@@ -33,7 +33,7 @@ export const config = {
       building: "Está construyendo una marca de moda sostenible que entrelaza textiles andinos reciclados.",
       bio: "Fundador de Apuk Eco Apparel, una marca que eleva la moda sostenible llevando el diseño y la manufactura ecuatoriana a Europa y EE.UU. Su amplia experiencia en la industria de hospitalidad moldea su enfoque centrado en el cliente. Cuando no está revolucionando la industria textil o buscando sinergias ecológicas, lo encontrarás disfrutando de su otra gran pasión: las montañas, el trekking y la naturaleza.",
       image: "/images/diego-pinto.png",
-      link: "https://apukecoapparel.com"
+      link: "https://www.instagram.com/apuk.ecuador/"
     },
     {
       id: "2",
@@ -43,7 +43,7 @@ export const config = {
       building: "Está construyendo una empresa líder en la provisión de equipos odontológicos en Ecuador.",
       bio: "Gerente General de Prodentec Cia. Ltda., empresa líder en la provisión de insumos y equipos odontológicos y representante de marcas internacionales en Ecuador. Con una formación como Ingeniero en Producción y Operaciones por la Universidad del Azuay y un MBA por la Universidad Católica de Cuenca, cuenta con más de 19 años de experiencia impulsando el sector salud en el país.",
       image: "/images/francisco-moscoso.jpg",
-      link: "https://www.linkedin.com/in/francisco-moscoso-02484a32b"
+      link: "https://www.prodentec.com.ec/"
     },
     {
       id: "3",
@@ -53,7 +53,7 @@ export const config = {
       building: "Está construyendo una marca que transforma los sabores a través de la fruta milagrosa.",
       bio: "Fundadora de Zafru, una marca innovadora que cultiva y procesa la baya africana 'fruta milagrosa' (Synsepalum dulcificum) en Ecuador mediante agricultura regenerativa. Su magia radica en la miraculina, una proteína que se adhiere a las papilas gustativas y vuelve dulces los sabores ácidos o amargos. Su visión la llevó a participar en Misión 593 (powered by Shark Tank), donde brilló llegando hasta la gran final.",
       image: "/images/raquel-salazar.png",
-      link: "https://zafru.com"
+      link: "https://zafru.ec/categoria-producto/fruta-milagrosa/"
     },
     {
       id: "4",
