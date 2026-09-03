@@ -65,6 +65,16 @@ export const config = {
       image: "/images/augusto-abendano.png",
       imagePosition: "object-[20%_center]",
       link: "https://linktr.ee/bisnezlegal"
+    },
+    {
+      id: "5",
+      name: "Ludwig Pucha Cofrep",
+      role: "CTO & Creador de Contenido",
+      project: "Fintezia",
+      building: "Está construyendo infraestructura financiera e inteligencia artificial para usuarios desatendidos.",
+      bio: "Arquitecto fintech autodidacta y emprendedor. Ha construido sistemas de crédito rentables desde cero, incluyendo productos pioneros para estudiantes universitarios sin historial crediticio tradicional. En Fintezia lidera el desarrollo de inteligencia artificial, arquitectura de datos e infraestructura financiera. Además, comparte su conocimiento como creador de contenido, habiendo cultivado una comunidad educativa de más de 300K seguidores en plataformas digitales.",
+      image: "/images/ludwig-pucha.png",
+      link: "https://fintezia.com"
     }
   ],
   stories: [
