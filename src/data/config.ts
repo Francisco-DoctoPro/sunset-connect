@@ -85,7 +85,7 @@ export const config = {
       title: "Así vivimos la primera edición de Sunset Connect",
       summary: "Arquitectos, abogados, emprendedores y más se reunieron en nuestro evento inaugural en Quito.",
       content: "Nuestra primera edición reunió en Quito a arquitectos, abogados, emprendedores, expertos en inteligencia artificial, creadores de moda sostenible y empresarios con más de treinta años de trayectoria.\n\nConversamos sobre lo que cada persona está construyendo, sus desafíos y las formas en que podemos ayudarnos. Porque Sunset Connect no busca acumular contactos, sino crear conexiones que realmente aporten.\n\nEntre las historias que descubrimos, Diego Pinto compartió que viajará a Italia para presentar una nueva colección de Apuk, su marca de moda sostenible. Raquel Salazar, fundadora de Zafru, nos invitó a probar la sorprendente 'fruta milagrosa' y experimentar cómo transforma temporalmente nuestra percepción de los sabores ácidos.\n\nGracias a Fintezia, Derecho EC y DoctoPro por hacer posible este primer encuentro, y especialmente a todas las personas que asistieron, compartieron su experiencia y decidieron aportar a la comunidad. Quienes participaron serán los primeros miembros de nuestro directorio. Ya estamos preparando la próxima edición en Cuenca y pronto compartiremos más novedades.",
-      image: "/images/quito-agosto.png",
+      image: "/images/quito-agosto.jpg",
       link: "",
       isFeatured: true,
     },
