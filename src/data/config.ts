@@ -80,13 +80,13 @@ export const config = {
   stories: [
     {
       id: "s1",
-      slug: "nueva-galeria-centro-historico",
-      category: "LANZAMIENTO",
-      title: "Nueva galería en el centro histórico",
-      summary: "El equipo de Taller Abierto inauguró un nuevo espacio para artistas locales.",
-      content: "El equipo de Taller Abierto ha inaugurado oficialmente un nuevo espacio en el corazón del centro histórico de Cuenca. Esta galería no solo busca exhibir obras de artistas emergentes locales, sino que también funcionará como un estudio colaborativo donde los creadores pueden interactuar con el público mientras trabajan en sus piezas.\n\nDurante el evento de apertura, más de 200 personas de la comunidad creativa local se dieron cita para celebrar este hito. La galería albergará exposiciones rotativas cada mes, talleres de arte gratuitos para jóvenes y eventos de networking diseñados para conectar el talento artístico con posibles inversores y coleccionistas.",
-      image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&q=80&w=800&h=500",
-      link: "https://example.com",
+      slug: "primera-edicion-quito",
+      category: "COMUNIDAD",
+      title: "Así vivimos la primera edición de Sunset Connect",
+      summary: "Arquitectos, abogados, emprendedores y más se reunieron en nuestro evento inaugural en Quito.",
+      content: "Nuestra primera edición reunió en Quito a arquitectos, abogados, emprendedores, expertos en inteligencia artificial, creadores de moda sostenible y empresarios con más de treinta años de trayectoria.\n\nConversamos sobre lo que cada persona está construyendo, sus desafíos y las formas en que podemos ayudarnos. Porque Sunset Connect no busca acumular contactos, sino crear conexiones que realmente aporten.\n\nEntre las historias que descubrimos, Diego Pinto compartió que viajará a Italia para presentar una nueva colección de Apuk, su marca de moda sostenible. Raquel Salazar, fundadora de Zafru, nos invitó a probar la sorprendente 'fruta milagrosa' y experimentar cómo transforma temporalmente nuestra percepción de los sabores ácidos.\n\nGracias a Fintezia, Derecho EC y DoctoPro por hacer posible este primer encuentro, y especialmente a todas las personas que asistieron, compartieron su experiencia y decidieron aportar a la comunidad. Quienes participaron serán los primeros miembros de nuestro directorio. Ya estamos preparando la próxima edición en Cuenca y pronto compartiremos más novedades.",
+      image: "/images/quito-agosto.png",
+      link: "",
       isFeatured: true,
     },
     {
