@@ -59,11 +59,11 @@ export const config = {
       id: "4",
       name: "Augusto Abendaño",
       role: "Abogado & Asesor Legal",
-      project: "Derecho.ec",
+      project: "Bisnez Legal",
       building: "Está construyendo hojas de ruta legales personalizadas para proteger e impulsar startups.",
       bio: "Especialista en resolver desafíos legales para empresas y startups con soluciones a la medida de cada modelo de negocio. Su profunda vinculación con el ecosistema de innovación en Ecuador le permite entender de primera mano los verdaderos retos de los emprendedores. Más que un abogado, es un aliado estratégico que garantiza el cumplimiento normativo para que los fundadores puedan concentrarse en construir el futuro.",
-      image: "/images/augusto-abendaño.jpg",
-      link: "https://derecho.ec/"
+      image: "/images/augusto-abendano.png",
+      link: "https://linktr.ee/bisnezlegal"
     }
   ],
   stories: [
