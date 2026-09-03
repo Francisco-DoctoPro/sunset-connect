@@ -63,6 +63,7 @@ export const config = {
       building: "Está construyendo hojas de ruta legales personalizadas para proteger e impulsar startups.",
       bio: "Especialista en resolver desafíos legales para empresas y startups con soluciones a la medida de cada modelo de negocio. Su profunda vinculación con el ecosistema de innovación en Ecuador le permite entender de primera mano los verdaderos retos de los emprendedores. Más que un abogado, es un aliado estratégico que garantiza el cumplimiento normativo para que los fundadores puedan concentrarse en construir el futuro.",
       image: "/images/augusto-abendano.png",
+      imagePosition: "object-[20%_center]",
       link: "https://linktr.ee/bisnezlegal"
     }
   ],

@@ -44,7 +44,7 @@ export function CommunityStrip() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                    className={`object-cover ${"imagePosition" in member && member.imagePosition ? member.imagePosition : "object-center"} grayscale group-hover:grayscale-0 transition-all duration-700`}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />
                 </motion.div>

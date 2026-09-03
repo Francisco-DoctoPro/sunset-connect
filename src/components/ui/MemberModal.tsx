@@ -69,7 +69,7 @@ export function MemberModal({ member, isOpen, onClose }: MemberModalProps) {
                 src={member.image}
                 alt={member.name}
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className={`object-cover ${"imagePosition" in member && member.imagePosition ? member.imagePosition : "object-center"} grayscale hover:grayscale-0 transition-all duration-700`}
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
             </div>
