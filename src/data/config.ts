@@ -57,13 +57,13 @@ export const config = {
     },
     {
       id: "4",
-      name: "Mateo Crespo",
-      role: "Artista Plástico",
-      project: "Taller Abierto",
-      building: "Está construyendo una residencia para creadores internacionales en Cuenca.",
-      bio: "Artista multidisciplinario con exposiciones en varios continentes. Su actual meta es transformar su ciudad natal en un hub cultural a través de su iniciativa Taller Abierto, un espacio para el intercambio creativo.",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=600&h=800",
-      link: "https://example.com"
+      name: "Augusto Abendaño",
+      role: "Abogado & Asesor Legal",
+      project: "Derecho.ec",
+      building: "Está construyendo hojas de ruta legales personalizadas para proteger e impulsar startups.",
+      bio: "Especialista en resolver desafíos legales para empresas y startups con soluciones a la medida de cada modelo de negocio. Su profunda vinculación con el ecosistema de innovación en Ecuador le permite entender de primera mano los verdaderos retos de los emprendedores. Más que un abogado, es un aliado estratégico que garantiza el cumplimiento normativo para que los fundadores puedan concentrarse en construir el futuro.",
+      image: "/images/augusto-abendaño.jpg",
+      link: "https://derecho.ec/"
     }
   ],
   stories: [
